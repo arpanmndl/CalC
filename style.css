@@ -1,0 +1,59 @@
+@font-face {
+    font-family: digital7;
+    src: url(fonts/digital-7.ttf);
+}
+
+.heading {
+    font-family:Helvetica;
+}
+
+.calculator{
+    background:#E0E0E0;
+    border-radius:0.6rem;
+    box-shadow: -13px 10px 11px #757575;
+}
+
+.screen {
+    background: #757575;
+    border-radius:0.35rem;
+}
+
+.screenBody{
+    background:rgb(18,18,18);
+    border-radius:0.6rem;
+}
+
+.screen .data {
+    font-size: 2.8rem;
+    /*font-family: digital7;*/
+    letter-spacing: 5px;
+}
+
+.btn {
+    font-size: 1.8rem;
+    border-radius:0.8rem;
+}
+
+.btn-sign{
+    background:#9E9E9E;
+    border-color:#9E9E9E;
+}
+
+.btn-sign:focus {
+    background:#9E9E9E;
+    border-color:#9E9E9E;
+}
+
+.btn-num:focus {
+    background-color:#f8f9fa;
+    border-color:#f8f9fa;
+}
+
+.btn-eql:focus {
+    background-color:#ffc107;
+    border-color:#ffc107;
+}
+
+h5{
+    color:#90A4AE;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="Calculator, Basic calculator, plus, minus, multiplication">
+	<title>CalC</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="calculator.png" type="image/png">
+</head>
+<body>
+<div class="container">
+	<div class="heading p-3 mt-2 mb-2 ">
+		<h1 class="text-center text-uppercase">Calculator</h1>
+	</div>
+	<div class="row justify-content-sm-center">
+		<div class="calculator col-sm-12 col-md-7 col-lg-6 col-xl-5">
+			<div class="row screenBody">
+				<div class="col screen pt-1 pb-1 pl-2 pr-2 mb-3 mt-4 ml-3 mr-3">
+					<div id="screen-data" class="data text-right">0</div>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.CLR, true)">C</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.PLM, true)">+/-</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.MOD, true)">%</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.POW, true)">x^y</button>
+				</div>
+				<div class="w-100 my-1"></div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(7, false);">7</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(8, false);">8</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(9, false);">9</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.DIV, true);">÷</button>
+				</div>
+				<div class="w-100 my-1"></div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(4, false);">4</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(5, false);">5</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(6, false);">6</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.MUL, true);">×</button>
+				</div>
+				<div class="w-100 my-1"></div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(1, false);">1</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(2, false);">2</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(3, false);">3</button>
+				</div>
+				<div class="col">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.MINUS, true);">-</button>
+				</div>
+				<div class="w-100 my-1"></div>
+				<div class="col mb-4">
+					<button class="btn btn-light btn-num w-100 shadow" onclick="getInput(0, false);">0</button>
+				</div>
+				<div class="col mb-4">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.DOT, true);">.</button>
+				</div>
+				<div class="col mb-4">
+					<button class="btn btn-warning btn-eql w-100 shadow" onclick="getInput(Operator.EQL, true);">=</button>
+				</div>
+				<div class="col mb-4">
+					<button class="btn btn-light btn-sign w-100 shadow" onclick="getInput(Operator.PLUS, true);">+</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer p-3 mt-3">
+		<h5 class="text-center">Developed By - Arpan Mandal & <br/>Anirban Das</h5>
+	</div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>
